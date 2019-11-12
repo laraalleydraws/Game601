@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 28, in script
+    jump begin
+ScriptError: could not find label 'begin'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 28, in script
+    jump begin
+  File "/Users/laraalley/Desktop/renpy-7.3.5-sdk/renpy/ast.py", line 1697, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Users/laraalley/Desktop/renpy-7.3.5-sdk/renpy/script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'begin'.
+
+Darwin-18.2.0-x86_64-i386-64bit
+Ren'Py 7.3.5.606
+Game1 1.0
+Mon Nov 11 03:23:18 2019
